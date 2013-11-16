@@ -5,7 +5,14 @@
 	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
  
     <bean name="/helloWorld" class="au.com.decoration.web.Controller.HelloWorldController" />
- 
+ 	<bean name="/multiController" class="au.com.decoration.web.Controller.MultiController">
+ 		<property name="methodNameResolver">
+ 			<ref bean="paramMthodResolver" />
+ 		</property>
+ 	</bean>
+    <bean id="paramMthodResolver" class="org.springframework.web.servlet.mvc.multiaction.ParameterMethodNameResolver">
+    	<property name="paramName" value="action"></property>
+    </bean>
     <bean id="viewResolver"
     	class="org.springframework.web.servlet.view.InternalResourceViewResolver" >
         <property name="prefix">

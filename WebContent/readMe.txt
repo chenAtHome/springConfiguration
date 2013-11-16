@@ -1,0 +1,1 @@
+Have one more methods in a controller in springMVC example
