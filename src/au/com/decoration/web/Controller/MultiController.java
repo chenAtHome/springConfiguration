@@ -11,12 +11,12 @@ public class MultiController extends MultiActionController{
 	public ModelAndView add(HttpServletRequest request,
 			HttpServletResponse response) {
 		System.out.println("hello, this is add ----------------");
-		return new ModelAndView("/multi","method","add");
+		return new ModelAndView("/multi");
 	}
 	
 	public ModelAndView update(HttpServletRequest request,
 			HttpServletResponse response) {
 		System.out.println("hello, this is update ----------------");
-		return new ModelAndView("/multi","method","update");
+		return new ModelAndView("/multi");
 	}
 }

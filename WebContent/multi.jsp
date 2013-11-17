@@ -8,6 +8,7 @@
 </head>
 <body>
 	<h1>Multi methods</h1>
-	<p>This time is ${method }</p>
+	<img src="img/bootstrap-docs-readme.png">
+	
 </body>
 </html>
